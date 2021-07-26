@@ -969,12 +969,14 @@ a {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 30px;
-  position: relative;
 }
 
 .div_filter_text {
   border-left: 5px solid #F16D7F;
   border-bottom: 1px solid #EBEBEB;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 .heading_filter_text {
@@ -983,6 +985,7 @@ a {
   font-size: 14px;
   line-height: 37px;
   color: #F16D7F;
+  cursor: pointer;
 }
 
 .filter_menu {
@@ -1006,26 +1009,46 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  cursor: pointer;
   width: 360px;
+  position: relative;
 }
 
-details > summary {
-  display: block;
+.absolute_menu {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  margin-top: -15px;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 50px;
+  padding-left: 15px;
 }
 
-.filter_menu[open] {
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+.filter_link_top {
+  padding-top: 15px;
 }
 
 #filter_link {
   display: none;
 }
 
+#filter_link:checked ~ .absolute_menu {
+  height: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding-bottom: 30px;
+}
+
 .filter_text {
   z-index: 600;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 svg {
@@ -1036,7 +1059,7 @@ svg {
   color: #F16D7F;
 }
 
-.filter_text:hover ~ svg {
+.filter_text:hover svg {
   fill: #F16D7F;
 }
 
@@ -1066,6 +1089,51 @@ svg {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+#filter_category {
+  display: none;
+}
+
+#filter_brand {
+  display: none;
+}
+
+#filter_designer {
+  display: none;
+}
+
+.category_list {
+  height: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.brand_list {
+  height: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.designer_list {
+  height: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+#filter_category:checked ~ .category_list {
+  height: auto;
+}
+
+#filter_brand:checked ~ .brand_list {
+  height: auto;
+}
+
+.filter_designer:checked .designer_list {
+  height: auto;
 }
 
 .menu_categories {
