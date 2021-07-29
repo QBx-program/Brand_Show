@@ -985,6 +985,7 @@ svg {
 
 .cart_box_inform {
     padding-left: 31px;
+    padding-right: 60px;
     padding-top: 22px;
     display: flex;
     flex-direction: column;
@@ -1038,11 +1039,17 @@ svg {
     color: $color-pink;
 }
 
-.quantity_text {
-    border: 1px solid #EAEAEA;
-    padding-left: 15px;
-    padding-right: 15px;
+.quantity_inp {
+    text-align: center;
+    width: 44px;
     margin-left: 30px;
+    height: 25px;
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
 }
 
 .btns_to_carts {
