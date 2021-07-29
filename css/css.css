@@ -1155,6 +1155,47 @@ svg {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.size_check_box {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  width: 79px;
+  height: 103px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 9999;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  cursor: auto;
+}
+
+.size:hover .size_check_box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.text_check_size {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  padding-left: 5px;
 }
 
 .menu_categories:hover {
@@ -1784,5 +1825,147 @@ svg {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.get_reg_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 21px;
+}
+
+.text_form_reg {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.checkbox_reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.radio_female {
+  margin-left: 20px;
+}
+
+.text_radio {
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.input_reg_data {
+  width: 360px;
+  height: 45px;
+  padding: 10px;
+  font-style: inherit;
+}
+
+.input_reg_data::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.input_reg_data:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.input_reg_data::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.input_reg_data::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.warning_text_reg {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  max-width: 360px;
+}
+
+.reg_btn {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.text_inf_reg {
+  padding-left: 20px;
+}
+
+.information_reg {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  max-width: 650px;
+}
+
+.text_loyalty_reg {
+  padding: 20px 0;
+}
+
+.text_loyalty_check_reg {
+  padding: 15px 0;
 }
 /*# sourceMappingURL=css.css.map */
