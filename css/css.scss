@@ -8,12 +8,11 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
 }
 
 .top {
     display: flex;
-    height: 764px;
+    max-height: 764px;
     background-color: #F1E4E6;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -31,6 +30,11 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     display: flex;
     align-items: flex-end;
     width: 50%;
+}
+
+.top_im {
+    width: 400px;
+    height: 760px;
 }
 
 .top_text {
@@ -93,12 +97,13 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 .top_offer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .offer_right {
-    width: 360px;
+    width: 100%;
     height: 260px;
     position: relative;
 }
@@ -106,23 +111,26 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 .video {
     position: absolute;
     z-index: -10;
-    width: 360px;
+    width: 100%;
 }
 
 .offer_center {
     background-image: url('../img/offer_2.jpg');
-    width: 360px;
+    background-size: cover;
+    width: 100%;
     height: 260px;
 }
 
 .offer_left {
     background-image: url('../img/offer_3.jpg');
-    width: 360px;
+    background-size: cover;
+    width: 100%;
     height: 260px;
 }
 
 .down_offer {
     background-image: url('../img/offer_4.jpg');
+    background-size: cover;
     width: 100%;
     height: 180px;
     position: relative;
@@ -354,6 +362,11 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 .feature {
     display: flex;
     background-color: #222224;
+    background-color: #222224;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .feat_block {
@@ -362,7 +375,7 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 360px;
+    max-width: 360px;
     height: 134px;
 }
 
@@ -401,7 +414,7 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 .feedback {
     display: flex;
     height: 225px;
-    width: 360px;
+    max-width: 360px;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -420,7 +433,7 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
 .form_subscribe {
     display: flex;
-    width: 557px;
+    max-width: 557px;
     height: 142px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -608,7 +621,7 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    width: 360px;
+    max-width: 360px;
     position: relative;
 }
 
@@ -775,14 +788,14 @@ svg {
 
 .product_box {
     display: flex;
-    height: 582px;
-    width: 360px;
+    max-height: 582px;
+    max-width: 360px;
     background-color: #F8F8F8;
 }
 
 .img_card_product {
     height: 420px;
-    width: 360px;
+    max-width: 360px;
     position: relative;
 }
 
@@ -1352,4 +1365,121 @@ svg {
 
 .text_loyalty_check_reg {
     padding: 15px 0;
+}
+
+@media (max-width: 769px) {
+    .top {
+        height: 368px;
+    }
+
+    .top_img {
+        justify-content: center;
+    }
+
+    .top_im {
+        width: 200px;
+        height: 365px
+    }
+
+    .up_text {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .down_text {
+        font-size: 24px;
+        line-height: 29px;  
+    }
+
+    .offer_center {
+        height: 167px;
+    }
+
+    .offer_right {
+        height: 167px;
+    }
+
+    .offer_left {
+        height: 167px;
+    }
+
+    .down_offer {
+        height: 116px;
+    }
+
+    .items {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 617px;
+    }
+}
+
+@media (max-width: 375px) {
+    .fa-user-alt {
+        display: none;
+    }
+
+    .shopping-cart {
+        display: none;
+    }
+
+    .menu_right {
+        justify-content: flex-end;
+    }
+
+    .top_img {
+        display:none;
+    }
+
+    .top_text {
+        width: 100%;
+    }
+
+    .up_text {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .down_text {
+        font-size: 20px;
+        line-height: 24px;  
+    }
+
+    .offer_center {
+        height: 247px;
+        width: 343px;
+    }
+
+    .offer_right {
+        height: 247px;
+        width: 343px;
+    }
+
+    .offer_left {
+        height: 247px;
+        width: 343px;
+    }
+
+    .down_offer {
+        height: 111px;
+        width: 343px;
+    }
+
+    .top_offer {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .subscribe {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

@@ -18,3 +18,10 @@ a {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
 }
+
+@media (max-width: 1159px) {
+    .center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
