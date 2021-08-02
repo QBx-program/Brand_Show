@@ -428,6 +428,10 @@ a {
   color: #F16D7F;
 }
 
+.fas {
+  color: white;
+}
+
 .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1159,7 +1163,7 @@ svg {
   height: auto;
 }
 
-.filter_designer:checked .designer_list {
+.filter_designer:checked ~ .designer_list {
   height: auto;
 }
 
@@ -1846,6 +1850,14 @@ svg {
           align-items: center;
 }
 
+.btn_pr_ch:hover {
+  background-color: #E05C6E;
+}
+
+.btn_pr_ch:active {
+  background-color: #642a32;
+}
+
 .btn_pr_ch_text {
   font-style: normal;
   font-weight: 300;
@@ -1973,6 +1985,15 @@ svg {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.reg_btn:hover {
+  background-color: #E05C6E;
+}
+
+.reg_btn:active {
+  background-color: #642a32;
 }
 
 .text_inf_reg {

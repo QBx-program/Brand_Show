@@ -1,4 +1,6 @@
 $color-pink: #F16D7F;
+$color-pink-sub: #E05C6E;
+$color-pink-dark: #642a32;
 $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
 @import "_vars.scss";
@@ -161,6 +163,10 @@ $shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     line-height: 29px;
     text-align: center;
     color: $color-pink;
+}
+
+.fas {
+    color: white;
 }
 
 .items {
@@ -730,7 +736,7 @@ svg {
     height: auto;
 }
 
-.filter_designer:checked .designer_list {
+.filter_designer:checked ~ .designer_list {
     height: auto;
 }
 
@@ -1261,6 +1267,14 @@ svg {
     align-items: center;
 }
 
+.btn_pr_ch:hover {
+    background-color: $color-pink-sub;
+}
+
+.btn_pr_ch:active {
+    background-color: $color-pink-dark;
+}
+
 .btn_pr_ch_text {
     font-style: normal;
     font-weight: 300;
@@ -1344,6 +1358,15 @@ svg {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.reg_btn:hover {
+    background-color: $color-pink-sub;
+}
+
+.reg_btn:active {
+    background-color: $color-pink-dark;
 }
 
 .text_inf_reg {
