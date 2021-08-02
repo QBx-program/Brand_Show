@@ -736,7 +736,7 @@ svg {
     height: auto;
 }
 
-.filter_designer:checked ~ .designer_list {
+#filter_designer:checked ~ .designer_list {
     height: auto;
 }
 
