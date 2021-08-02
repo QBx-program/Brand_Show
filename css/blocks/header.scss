@@ -1,0 +1,134 @@
+$shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+.header {
+    background-color: #222222;
+    color: white;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.menu_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 111px;
+}
+
+.menu_aw {
+    font-size: 26px;
+}
+
+.menu_right {
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ .menu_nav{
+    transform: scale(1);
+    width: 232px;
+    height: 764px;
+}
+
+.close_menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_nav {
+    position: absolute;
+    transform: scale(0);
+    background-color: #ffffff;
+    box-shadow: $shadow;
+    right: 0;
+    padding: 10px 10px;
+    z-index: 99999;
+    top: 75px;
+    transition: 0.4s;
+    transform-origin: right top;
+}
+
+.head_group_nav {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-top: 29px;
+}
+
+.menu_nav_link{
+    padding-top: 15px;
+    padding-left: 20px;
+    
+}
+
+.link_a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.link_a:hover {
+    color: #F16D7F;
+}
+
+.head_menu {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+
+.counter {
+    display: flex;
+    background-image: url('../img/Ellipse_i.png');
+    height: 19px;
+    width: 19px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.close_menu svg:hover {
+    fill: #F16D7F;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
+@keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
